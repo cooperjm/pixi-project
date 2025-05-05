@@ -3,6 +3,7 @@ import { addBackground } from './addBackground';
 import { addDisplacementEffect } from './addDisplacementEffect';
 import { addFishes, animateFishes } from './addFishes';
 import { addWaterOverlay, animateWaterOverlay } from './addWaterOverlay';
+import riverBottom from '/assets/riverbottom_result.webp';
 
 // Create a PixiJS application.
 const app = new Application();
@@ -21,6 +22,7 @@ async function setup()
 
 async function preload()
 {
+   
     // Create an array of asset data to load.
     const assets = [
         { alias: 'background', src: 'https://pixijs.com/assets/tutorials/fish-pond/pond_background.jpg' },
@@ -31,6 +33,7 @@ async function preload()
         { alias: 'fish5', src: 'https://pixijs.com/assets/tutorials/fish-pond/fish5.png' },
         { alias: 'overlay', src: 'https://pixijs.com/assets/tutorials/fish-pond/wave_overlay.png' },
         { alias: 'displacement', src: 'https://pixijs.com/assets/tutorials/fish-pond/displacement_map.png' },
+        { alias: 'riverbottom', src: riverBottom }
     ];
 
     // Load the assets defined above.

@@ -3,7 +3,9 @@ import { Sprite } from 'pixi.js';
 export function addBackground(app)
 {
     // Create a background sprite.
-    const background = Sprite.from('background');
+    // const background = Sprite.from('background');
+    const background = Sprite.from('riverbottom');
+    background.tint = 0x888888;
 
     // Center background sprite anchor.
     background.anchor.set(0.5);

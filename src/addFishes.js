@@ -8,7 +8,7 @@ export function addFishes(app, fishes)
     // Add the fish container to the stage.
     app.stage.addChild(fishContainer);
 
-    const fishCount = 20;
+    const fishCount = 24;
     const fishAssets = ['fish1', 'fish2', 'fish3', 'fish4', 'fish5'];
 
     // Create a fish sprite for each fish.
